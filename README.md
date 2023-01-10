@@ -15,12 +15,13 @@ all of the business logic/handling of opening hours.
 **Summary of features**
 
 * Display your business' opening hours as a
-    * Table (Full week or days with same opening times combined)
-    * String (<code> "We're closed since Monday 19:00 o'clock, We will re-open at Tuesday 08:00 o'clock."</code>)
+    * Table: Full week or days with same opening times combined
+    * String: e.g.: <code>"We're closed since Monday 19:00 o'clock, We will re-open at Tuesday 08:00 o'clock."</code>
 * Show all your different/varying opening hours (e.g. special openings on
   certain dates)
 * Display your regular schedule or schedules for contrete weeks with variing
   opening times
+* Fully customize the output to your desire by overwriting Fluid templates
 * Leverages [spatie/opening-hours](https://github.com/spatie/opening-hours)
 
 ## Installation
