@@ -1,11 +1,7 @@
 [![StandWithUkraine](https://raw.githubusercontent.com/vshymanskyy/StandWithUkraine/main/badges/StandWithUkraine.svg)](https://github.com/vshymanskyy/StandWithUkraine/blob/main/docs/README.md)
 [![TYPO3 10](https://img.shields.io/badge/TYPO3-10-orange.svg)](https://get.typo3.org/version/10)
 [![TYPO3 11](https://img.shields.io/badge/TYPO3-11-orange.svg)](https://get.typo3.org/version/11)
-[![Latest Stable Version](http://poser.pugx.org/dauskonzept/openinghours/v)](https://packagist.org/packages/dauskonzept/openinghours)
-[![Total Downloads](http://poser.pugx.org/dauskonzept/openinghours/downloads)](https://packagist.org/packages/dauskonzept/openinghours)
-[![Latest Unstable Version](http://poser.pugx.org/dauskonzept/openinghours/v/unstable)](https://packagist.org/packages/dauskonzept/openinghours)
-[![License](http://poser.pugx.org/dauskonzept/openinghours/license)](https://packagist.org/packages/dauskonzept/openinghours)
-[![PHP Version Require](http://poser.pugx.org/dauskonzept/openinghours/require/php)](https://packagist.org/packages/dauskonzept/openinghours)
+[![Latest Stable Version](http://poser.pugx.org/dskzpt/openinghours/v)](https://packagist.org/packages/dskzpt/openinghours) [![Total Downloads](http://poser.pugx.org/dskzpt/openinghours/downloads)](https://packagist.org/packages/dskzpt/openinghours) [![Latest Unstable Version](http://poser.pugx.org/dskzpt/openinghours/v/unstable)](https://packagist.org/packages/dskzpt/openinghours) [![License](http://poser.pugx.org/dskzpt/openinghours/license)](https://packagist.org/packages/dskzpt/openinghours) [![PHP Version Require](http://poser.pugx.org/dskzpt/openinghours/require/php)](https://packagist.org/packages/dskzpt/openinghours)
 
 TYPO3 Extension "openinghours"
 =================================
