@@ -37,8 +37,7 @@ root, just run:
 
 ## Setup
 
-1. Install extension via composer <code>composer require
-   dskzpt/openinghours</code>
+1. Install extension via composer <code>composer require dskzpt/openinghours</code>
 2. Include the static TypoScript
 3. Create a "Schedule" entity and fill in your opening times and exceptions
 4. Add a frontend plugin to a page to render your desired view.
