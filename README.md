@@ -16,8 +16,7 @@ all of the business logic/handling of opening hours.
 
 * Display your business' opening hours as a
     * Table (Full week or days with same opening times combined)
-    * String (<code> "We're closed since Monday 19:00 o'clock, We will re-open
-      at Tuesday 20:43 o'clock."</code>)
+    * String (<code> "We're closed since Monday 19:00 o'clock, We will re-open at Tuesday 20:43 o'clock."</code>)
 * Show all your different/varying opening hours (e.g. special openings on
   certain dates)
 * Display your regular schedule or schedules for contrete weeks with variing
@@ -33,8 +32,7 @@ root, just run:
 
 ## Setup
 
-1. Install extension via composer <code>composer require
-   dskzpt/openinghours</code>
+1. Install extension via composer <code>composer require dskzpt/openinghours</code>
 2. Include the static TypoScript
 3. Create a "Schedule" entity and fill in your opening times and exceptions
 4. Add a frontend plugin to a page to render your desired view.
