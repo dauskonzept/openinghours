@@ -1,0 +1,69 @@
+<T3DataStructure>
+    <meta>
+        <langDisable>1</langDisable>
+    </meta>
+    <sheets>
+        <MAIN>
+            <ROOT>
+                <TCEforms>
+                    <sheetTitle>LLL:EXT:openinghours/Resources/Private/Language/locallang_table.xlf:ff.main</sheetTitle>
+                </TCEforms>
+                <type>array</type>
+                <el>
+                    <settings.tableMode>
+                        <TCEforms>
+                            <label>Table mode</label>
+                            <config>
+                                <type>select</type>
+                                <renderType>selectSingle</renderType>
+                                <items type="array">
+                                    <numIndex index="0" type="array">
+                                        <numIndex index="0">Full</numIndex>
+                                        <numIndex index="1">full</numIndex>
+                                    </numIndex>
+                                    <numIndex index="1" type="array">
+                                        <numIndex index="0">Compact</numIndex>
+                                        <numIndex index="1">compact</numIndex>
+                                    </numIndex>
+                                </items>
+                            </config>
+                        </TCEforms>
+                    </settings.tableMode>
+
+                    <settings.displayMode>
+                        <TCEforms>
+                            <label>Display mode</label>
+                            <onChange>reload</onChange>
+                            <config>
+                                <type>select</type>
+                                <renderType>selectSingle</renderType>
+                                <items type="array">
+                                    <numIndex index="0" type="array">
+                                        <numIndex index="0">Regular Schedule</numIndex>
+                                        <numIndex index="1">regular</numIndex>
+                                    </numIndex>
+                                    <numIndex index="1" type="array">
+                                        <numIndex index="0">Schedule with respected exceptions</numIndex>
+                                        <numIndex index="1">real</numIndex>
+                                    </numIndex>
+                                </items>
+                            </config>
+                        </TCEforms>
+                    </settings.displayMode>
+
+                    <settings.dateString>
+                        <TCEforms>
+                            <label>Date string (PHP Datetime compliant)</label>
+                            <displayCond>FIELD:settings.displayMode:=:real</displayCond>
+                            <config>
+                                <type>input</type>
+                                <size>20</size>
+                                <eval>trim</eval>
+                            </config>
+                        </TCEforms>
+                    </settings.dateString>
+                </el>
+            </ROOT>
+        </MAIN>
+    </sheets>
+</T3DataStructure>

@@ -1,0 +1,27 @@
+plugin.tx_openinghours {
+  view {
+    templateRootPaths {
+      0 = EXT:openinghours/Resources/Private/Templates/
+      1 = {$plugin.tx_openinghours.view.templateRootPath}
+    }
+
+    partialRootPaths {
+      0 = EXT:openinghours/Resources/Private/Partials/
+      1 = {$plugin.tx_openinghours.view.partialRootPath}
+    }
+
+    layoutRootPaths {
+      0 = EXT:openinghours/Resources/Private/Layouts/
+      1 = {$plugin.tx_openinghours.view.layoutRootPath}
+    }
+  }
+
+  persistence {
+    storagePid = {$plugin.tx_openinghours.persistence.storagePid}
+  }
+
+  features {
+    # if set to 1, the enable fields are ignored in BE context
+    ignoreAllEnableFieldsInBe = 0
+  }
+}

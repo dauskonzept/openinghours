@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="EXT:openinghours/Resources/Private/Language/locallang_csh_tx_openinghours_domain_model_schedule.xlf" date="2023-01-06T16:20:35Z" product-name="openinghours">
+		<header/>
+		<body>
+			<trans-unit id="title.description" resname="title.description">
+				<source>title</source>
+			</trans-unit>
+			<trans-unit id="startdate.description" resname="startdate.description">
+				<source>startdate</source>
+			</trans-unit>
+			<trans-unit id="enddate.description" resname="enddate.description">
+				<source>enddate</source>
+			</trans-unit>
+			<trans-unit id="monday.description" resname="monday.description">
+				<source>monday</source>
+			</trans-unit>
+			<trans-unit id="tuesday.description" resname="tuesday.description">
+				<source>tuesday</source>
+			</trans-unit>
+			<trans-unit id="wednesday.description" resname="wednesday.description">
+				<source>wednesday</source>
+			</trans-unit>
+			<trans-unit id="thursday.description" resname="thursday.description">
+				<source>thursday</source>
+			</trans-unit>
+			<trans-unit id="friday.description" resname="friday.description">
+				<source>friday</source>
+			</trans-unit>
+			<trans-unit id="saturday.description" resname="saturday.description">
+				<source>saturday</source>
+			</trans-unit>
+			<trans-unit id="sunday.description" resname="sunday.description">
+				<source>sunday</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

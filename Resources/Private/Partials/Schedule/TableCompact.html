@@ -1,0 +1,33 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+      data-namespace-typo3-fluid="true"
+>
+
+<table class="table">
+    <f:for each="{openinghours.forWeekCombined}"
+           as="days"
+           key="weekday"
+    >
+        <tr>
+            <td>
+                <f:for each="{days.days}" as="day">
+                    <f:variable name="opening_hours" value="{days.opening_hours}"/>
+                    {day},
+                </f:for>
+            </td>
+            <td>
+                <f:if condition="{opening_hours}">
+                    <f:then>
+                        <f:for each="{opening_hours}" as="openingTimes">
+                            {openingTimes}
+                        </f:for>
+                    </f:then>
+                    <f:else>
+                        closed
+                    </f:else>
+                </f:if>
+            </td>
+        </tr>
+    </f:for>
+</table>
+
+</html>

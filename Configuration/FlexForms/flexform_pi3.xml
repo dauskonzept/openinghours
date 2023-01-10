@@ -1,0 +1,28 @@
+<T3DataStructure>
+    <meta>
+        <langDisable>1</langDisable>
+    </meta>
+    <sheets>
+        <MAIN>
+            <ROOT>
+                <TCEforms>
+                    <sheetTitle>LLL:EXT:openinghours/Resources/Private/Language/locallang_table.xlf:ff.main</sheetTitle>
+                </TCEforms>
+                <type>array</type>
+                <el>
+                    <settings.dateString>
+                        <TCEforms>
+                            <label>Date string to show exceptions since (PHP Datetime compliant)</label>
+                            <config>
+                                <type>input</type>
+                                <size>20</size>
+                                <default>today</default>
+                                <eval>trim</eval>
+                            </config>
+                        </TCEforms>
+                    </settings.dateString>
+                </el>
+            </ROOT>
+        </MAIN>
+    </sheets>
+</T3DataStructure>

@@ -1,0 +1,31 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+      data-namespace-typo3-fluid="true"
+>
+
+<table class="table">
+    <f:for each="{schedule}"
+           as="openingTimes"
+           key="weekday"
+    >
+        <tr>
+            <td>
+                {weekday} <br>
+                <small>{openingTimes.data}</small>
+            </td>
+            <td>
+                <f:if condition="{openingTimes}">
+                    <f:then>
+                        <f:for each="{openingTimes}" as="openingTime">
+                            {openingTime} <small>{openingTime.data}</small><br>
+                        </f:for>
+                    </f:then>
+                    <f:else>
+                        geschlossen
+                    </f:else>
+                </f:if>
+            </td>
+        </tr>
+    </f:for>
+</table>
+
+</html>

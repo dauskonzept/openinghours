@@ -1,0 +1,11 @@
+services:
+  _defaults:
+    autowire: true
+    autoconfigure: true
+    public: false
+
+  DSKZPT\Openinghours\:
+    resource: '../Classes/*'
+
+  DSKZPT\Openinghours\Provider\OpeningHoursProviderInterface: '@DSKZPT\Openinghours\Provider\OpeningHoursProvider'
+

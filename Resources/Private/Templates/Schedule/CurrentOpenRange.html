@@ -1,0 +1,19 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+      data-namespace-typo3-fluid="true"
+>
+
+<f:layout name="Default"/>
+
+<f:section name="content">
+    <f:if condition="{range}">
+        <f:then>
+            We're open since {rangeStart} o'clock. We'll will close at {rangeEnd} o'clock.
+        </f:then>
+        <f:else>
+            We're closed since {previousClose -> f:format.date(format: 'l H:i')} o'clock,
+            We will re-open at {nextOpen -> f:format.date(format: 'l H:i')} o'clock.
+        </f:else>
+    </f:if>
+</f:section>
+
+</html>

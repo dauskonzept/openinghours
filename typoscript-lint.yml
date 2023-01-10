@@ -1,0 +1,17 @@
+paths:
+  - ./Configuration
+
+filePatterns:
+  - "*.typoscript"
+
+sniffs:
+  - class: Indentation
+    parameters:
+      useSpaces: true
+      indentPerLevel: 2
+  - class: RepeatingRValue
+    parameters:
+      allowedRightValues:
+        - EXT:openinghours/Resources/Private/Templates/
+        - EXT:openinghours/Resources/Private/Layouts/
+        - EXT:openinghours/Resources/Private/Partials/

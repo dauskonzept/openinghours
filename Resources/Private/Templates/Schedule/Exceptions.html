@@ -1,0 +1,22 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+      data-namespace-typo3-fluid="true"
+>
+
+<f:layout name="Default"/>
+
+<f:section name="content">
+    <table class="table">
+        <f:for each="{exceptions}" as="exception" key="date">
+            <tr>
+                <td>
+                    {date}
+                </td>
+                <td>
+                    {exception} <small>{exception.data}</small>
+                </td>
+            </tr>
+        </f:for>
+    </table>
+</f:section>
+
+</html>

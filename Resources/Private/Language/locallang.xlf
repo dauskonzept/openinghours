@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="EXT:openinghours/Resources/Private/Language/locallang.xlf" date="2023-01-06T16:20:35Z" product-name="openinghours">
+		<header/>
+		<body>
+			<trans-unit id="tx_openinghours_domain_model_schedule" resname="tx_openinghours_domain_model_schedule">
+				<source>Schedule</source>
+			</trans-unit>
+			<trans-unit id="tx_openinghours_domain_model_schedule.title" resname="tx_openinghours_domain_model_schedule.title">
+				<source>Title</source>
+			</trans-unit>
+			<trans-unit id="tx_openinghours_domain_model_schedule.startdate" resname="tx_openinghours_domain_model_schedule.startdate">
+				<source>Startdate</source>
+			</trans-unit>
+			<trans-unit id="tx_openinghours_domain_model_schedule.enddate" resname="tx_openinghours_domain_model_schedule.enddate">
+				<source>Enddate</source>
+			</trans-unit>
+			<trans-unit id="tx_openinghours_domain_model_schedule.monday" resname="tx_openinghours_domain_model_schedule.monday">
+				<source>Monday</source>
+			</trans-unit>
+			<trans-unit id="tx_openinghours_domain_model_schedule.tuesday" resname="tx_openinghours_domain_model_schedule.tuesday">
+				<source>Tuesday</source>
+			</trans-unit>
+			<trans-unit id="tx_openinghours_domain_model_schedule.wednesday" resname="tx_openinghours_domain_model_schedule.wednesday">
+				<source>Wednesday</source>
+			</trans-unit>
+			<trans-unit id="tx_openinghours_domain_model_schedule.thursday" resname="tx_openinghours_domain_model_schedule.thursday">
+				<source>Thursday</source>
+			</trans-unit>
+			<trans-unit id="tx_openinghours_domain_model_schedule.friday" resname="tx_openinghours_domain_model_schedule.friday">
+				<source>Friday</source>
+			</trans-unit>
+			<trans-unit id="tx_openinghours_domain_model_schedule.saturday" resname="tx_openinghours_domain_model_schedule.saturday">
+				<source>Saturday</source>
+			</trans-unit>
+			<trans-unit id="tx_openinghours_domain_model_schedule.sunday" resname="tx_openinghours_domain_model_schedule.sunday">
+				<source>Sunday</source>
+			</trans-unit>
+			<trans-unit id="tx_openinghours_domain_model_openingtime" resname="tx_openinghours_domain_model_openingtime">
+				<source>Openingtime</source>
+			</trans-unit>
+			<trans-unit id="tx_openinghours_domain_model_openingtime.start" resname="tx_openinghours_domain_model_openingtime.start">
+				<source>Start</source>
+			</trans-unit>
+			<trans-unit id="tx_openinghours_domain_model_openingtime.end" resname="tx_openinghours_domain_model_openingtime.end">
+				<source>End</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>
