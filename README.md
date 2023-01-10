@@ -16,7 +16,7 @@ all of the business logic/handling of opening hours.
 
 * Display your business' opening hours as a
     * Table (Full week or days with same opening times combined)
-    * String (<code> "We're closed since Monday 19:00 o'clock, We will re-open at Tuesday 20:43 o'clock."</code>)
+    * String (<code> "We're closed since Monday 19:00 o'clock, We will re-open at Tuesday 08:00 o'clock."</code>)
 * Show all your different/varying opening hours (e.g. special openings on
   certain dates)
 * Display your regular schedule or schedules for contrete weeks with variing
