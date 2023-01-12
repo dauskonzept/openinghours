@@ -9,14 +9,14 @@
     >
         <tr>
             <td>
-                {weekday} <br>
+                <f:translate key="weekday.abbr.{weekday}" /> <br>
                 <small>{openingTimes.data}</small>
             </td>
             <td>
                 <f:if condition="{openingTimes}">
                     <f:then>
                         <f:for each="{openingTimes}" as="openingTime">
-                            {openingTime} <small>{openingTime.data}</small><br>
+                            {openingTime} Uhr <small>{openingTime.data}</small><br>
                         </f:for>
                     </f:then>
                     <f:else>

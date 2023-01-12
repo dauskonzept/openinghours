@@ -5,16 +5,20 @@ declare(strict_types=1);
 namespace DSKZPT\Openinghours\Domain;
 
 use DateTime;
+use DSKZPT\Openinghours\Domain\Model\Override;
+use DSKZPT\Openinghours\Domain\Model\Schedule;
 use Spatie\OpeningHours\Day;
 use Spatie\OpeningHours\OpeningHours as BaseOpeningHours;
 use Spatie\OpeningHours\OpeningHoursForDay;
 
 /**
  * Wrapper for Spatie\OpeningHours\OpeningHours.
- * Wrappes its methods to make them callable in Fluid Templates.
+ * Wraps its methods to make them callable in Fluid Templates.
  */
 class OpeningHours extends BaseOpeningHours
 {
+    private ?Schedule $schedule = null;
+
     /**
      * @return Day[]
      */
@@ -24,7 +28,7 @@ class OpeningHours extends BaseOpeningHours
     }
 
     /**
-     * @inheritDoc
+     * @see forWeekCombined()
      */
     public function getForWeekCombined(): array
     {
@@ -56,7 +60,7 @@ class OpeningHours extends BaseOpeningHours
     }
 
     /**
-     * @inheritDoc
+     * @see forWeekConsecutiveDays
      */
     public function getForWeekConsecutiveDays(): array
     {
@@ -71,6 +75,11 @@ class OpeningHours extends BaseOpeningHours
         return $this->getExceptions(new \DateTime());
     }
 
+    /**
+     * @return mixed[]
+     *
+     * @throws \Exception
+     */
     public function getForWeekWithExceptions(string $startDay = 'next monday'): array
     {
         $return = [];
@@ -82,5 +91,53 @@ class OpeningHours extends BaseOpeningHours
         }
 
         return $return;
+    }
+
+    public function getSchedule(): ?Schedule
+    {
+        return $this->schedule;
+    }
+
+    public function getCurrentOpenRange()
+    {
+        return $this->currentOpenRange(new \DateTime());
+    }
+
+    public function getPreviousClose()
+    {
+        return $this->previousClose(new \DateTime());
+    }
+
+    public function getNextOpen()
+    {
+        return $this->nextOpen(new \DateTime());
+    }
+
+    public function getNextClose()
+    {
+        return $this->nextClose(new \DateTime());
+    }
+
+    public function setSchedule(?Schedule $schedule): self
+    {
+        $this->schedule = $schedule;
+
+        return $this;
+    }
+
+    public function hasActiveOverride(): bool
+    {
+        $overrides = $this->schedule->getOverrides();
+
+        return $overrides->count() > 0;
+    }
+
+    public function getOverride(): ?Override
+    {
+        if ($this->hasActiveOverride() === false) {
+            return null;
+        }
+
+        return $this->schedule->getOverrides()[0];
     }
 }

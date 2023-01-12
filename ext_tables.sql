@@ -11,7 +11,8 @@ CREATE TABLE tx_openinghours_domain_model_schedule
 	saturday   int(11) unsigned NOT NULL DEFAULT '0',
 	sunday     int(11) unsigned NOT NULL DEFAULT '0',
 	categories int(11) unsigned DEFAULT '0' NOT NULL,
-	exceptions int(11) unsigned NOT NULL DEFAULT '0'
+	exceptions int(11) unsigned NOT NULL DEFAULT '0',
+	overrides  int(11) unsigned NOT NULL DEFAULT '0'
 );
 
 CREATE TABLE tx_openinghours_domain_model_openingtime
@@ -34,6 +35,11 @@ CREATE TABLE tx_openinghours_domain_model_exception
 	schedule     int(11) unsigned DEFAULT '0' NOT NULL,
 	date         date         DEFAULT NULL,
 	data         varchar(255) DEFAULT '' NOT NULL,
-	openinghours int(11) unsigned DEFAULT '0' NOT NULL,
+	openinghours int(11) unsigned DEFAULT '0' NOT NULL
+);
 
+CREATE TABLE tx_openinghours_domain_model_override
+(
+	schedule int(11) unsigned DEFAULT '0' NOT NULL,
+	text     varchar(255) DEFAULT '' NOT NULL
 );

@@ -30,6 +30,9 @@ class OpeningHoursProvider implements OpeningHoursProviderInterface
             throw new \InvalidArgumentException('Es gibt keinen Olan!!!! @todo');
         }
 
-        return $this->openingHoursFactory->createFromSchedule($currentSchedule);
+        $openingHours = $this->openingHoursFactory->createFromSchedule($currentSchedule);
+        $openingHours->setSchedule($currentSchedule);
+
+        return $openingHours;
     }
 }
