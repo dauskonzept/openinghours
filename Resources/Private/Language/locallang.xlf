@@ -9,12 +9,6 @@
 			<trans-unit id="tx_openinghours_domain_model_schedule.title" resname="tx_openinghours_domain_model_schedule.title">
 				<source>Title</source>
 			</trans-unit>
-			<trans-unit id="tx_openinghours_domain_model_schedule.startdate" resname="tx_openinghours_domain_model_schedule.startdate">
-				<source>Startdate</source>
-			</trans-unit>
-			<trans-unit id="tx_openinghours_domain_model_schedule.enddate" resname="tx_openinghours_domain_model_schedule.enddate">
-				<source>Enddate</source>
-			</trans-unit>
 			<trans-unit id="tx_openinghours_domain_model_schedule.monday" resname="tx_openinghours_domain_model_schedule.monday">
 				<source>Monday</source>
 			</trans-unit>

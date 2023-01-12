@@ -1,8 +1,6 @@
 CREATE TABLE tx_openinghours_domain_model_schedule
 (
 	title      varchar(255) NOT NULL DEFAULT '',
-	startdate  int(11) unsigned NOT NULL DEFAULT '0',
-	enddate    int(11) unsigned NOT NULL DEFAULT '0',
 	monday     int(11) unsigned NOT NULL DEFAULT '0',
 	tuesday    int(11) unsigned NOT NULL DEFAULT '0',
 	wednesday  int(11) unsigned NOT NULL DEFAULT '0',

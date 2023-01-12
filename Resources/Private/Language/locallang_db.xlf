@@ -9,12 +9,6 @@
 			<trans-unit id="tx_openinghours_domain_model_schedule.title" resname="tx_openinghours_domain_model_schedule.title">
 				<source>Title</source>
 			</trans-unit>
-			<trans-unit id="tx_openinghours_domain_model_schedule.startdate" resname="tx_openinghours_domain_model_schedule.startdate">
-				<source>Startdate</source>
-			</trans-unit>
-			<trans-unit id="tx_openinghours_domain_model_schedule.enddate" resname="tx_openinghours_domain_model_schedule.enddate">
-				<source>Enddate</source>
-			</trans-unit>
 			<trans-unit id="tx_openinghours_domain_model_schedule.monday" resname="tx_openinghours_domain_model_schedule.monday">
 				<source>Monday</source>
 			</trans-unit>
@@ -36,6 +30,12 @@
 			<trans-unit id="tx_openinghours_domain_model_schedule.sunday" resname="tx_openinghours_domain_model_schedule.sunday">
 				<source>Sunday</source>
 			</trans-unit>
+			<trans-unit id="tx_openinghours_domain_model_schedule.exceptions" resname="tx_openinghours_domain_model_schedule.exceptions">
+				<source>Exceptions</source>
+			</trans-unit>
+			<trans-unit id="tx_openinghours_domain_model_schedule.overrides" resname="tx_openinghours_domain_model_schedule.overrides">
+				<source>Overrides</source>
+			</trans-unit>
 			<trans-unit id="tx_openinghours_domain_model_openingtime" resname="tx_openinghours_domain_model_openingtime">
 				<source>Openingtime</source>
 			</trans-unit>
@@ -48,6 +48,10 @@
 			<trans-unit id="tx_openinghours_domain_model_openingtime.data" resname="tx_openinghours_domain_model_openingtime.data">
 				<source>Data</source>
 			</trans-unit>
+			<trans-unit id="tx_openinghours_domain_model_override.text" resname="tx_openinghours_domain_model_override.text">
+				<source>Text</source>
+			</trans-unit>
+
 			<trans-unit id="tx_openinghours_list.name" resname="tx_openinghours_list.name">
 				<source>List</source>
 			</trans-unit>

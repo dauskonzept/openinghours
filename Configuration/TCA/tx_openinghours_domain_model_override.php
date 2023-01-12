@@ -23,7 +23,13 @@ return [
         'iconfile' => 'EXT:openinghours/Resources/Public/Icons/tx_openinghours_domain_model_override.gif',
     ],
     'types' => [
-        '1' => ['showitem' => 'text, --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:language, sys_language_uid, l10n_parent, l10n_diffsource, --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:access, hidden, starttime, endtime'],
+        '1' => ['showitem' => '--palette--;;fields, --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:language, sys_language_uid, l10n_parent, l10n_diffsource, --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:access, hidden'],
+    ],
+    'palettes' => [
+        'fields' => [
+            'label' => 'LLL:EXT:openinghours/Resources/Private/Language/locallang.xlf:palette.fields.title',
+            'showitem' => 'text, starttime, endtime',
+        ],
     ],
     'columns' => [
         'sys_language_uid' => [
