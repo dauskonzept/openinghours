@@ -21,7 +21,7 @@ return [
         'iconfile' => 'EXT:openinghours/Resources/Public/Icons/tx_openinghours_domain_model_schedule.gif',
     ],
     'types' => [
-        '1' => ['showitem' => 'title, startdate, enddate, --div--;Opening hours, monday, tuesday, wednesday, thursday, friday, saturday, sunday, --div--;Exceptions, exceptions, --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:language, sys_language_uid, l10n_parent, l10n_diffsource, --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:access, hidden, starttime, endtime'],
+        '1' => ['showitem' => 'title, startdate, enddate, --div--;Opening hours, monday, tuesday, wednesday, thursday, friday, saturday, sunday, --div--;Exceptions, exceptions, --div--;Overrides, overrides, --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:language, sys_language_uid, l10n_parent, l10n_diffsource, --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:access, hidden, starttime, endtime'],
     ],
     'columns' => [
         'sys_language_uid' => [
@@ -266,7 +266,6 @@ return [
                 ],
             ],
         ],
-
         'exceptions' => [
             'exclude' => true,
             'label' => 'LLL:EXT:openinghours/Resources/Private/Language/locallang_db.xlf:tx_openinghours_domain_model_schedule.exceptions',
@@ -275,6 +274,24 @@ return [
                 'foreign_table' => 'tx_openinghours_domain_model_exception',
                 'foreign_field' => 'schedule',
                 'foreign_sortby' => 'sorting',
+                'maxitems' => 9999,
+                'appearance' => [
+                    'collapseAll' => 1,
+                    'levelLinksPosition' => 'top',
+                    'showSynchronizationLink' => 1,
+                    'showPossibleLocalizationRecords' => 1,
+                    'useSortable' => 1,
+                    'showAllLocalizationLink' => 1,
+                ],
+            ],
+        ],
+        'overrides' => [
+            'exclude' => true,
+            'label' => 'LLL:EXT:openinghours/Resources/Private/Language/locallang_db.xlf:tx_openinghours_domain_model_schedule.overrides',
+            'config' => [
+                'type' => 'inline',
+                'foreign_table' => 'tx_openinghours_domain_model_override',
+                'foreign_field' => 'schedule',
                 'maxitems' => 9999,
                 'appearance' => [
                     'collapseAll' => 1,

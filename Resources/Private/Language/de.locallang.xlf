@@ -4,94 +4,93 @@
 		<header/>
 		<body>
 			<trans-unit id="tx_openinghours_domain_model_schedule" resname="tx_openinghours_domain_model_schedule">
-				<source>Schedule</source>
+				<target>Öffnungszeitenplan</target>
 			</trans-unit>
 			<trans-unit id="tx_openinghours_domain_model_schedule.title" resname="tx_openinghours_domain_model_schedule.title">
-				<source>Title</source>
+				<target>Titel</target>
 			</trans-unit>
 			<trans-unit id="tx_openinghours_domain_model_schedule.startdate" resname="tx_openinghours_domain_model_schedule.startdate">
-				<source>Startdate</source>
+				<target>Startdatum</target>
 			</trans-unit>
 			<trans-unit id="tx_openinghours_domain_model_schedule.enddate" resname="tx_openinghours_domain_model_schedule.enddate">
-				<source>Enddate</source>
+				<target>Enddatum</target>
 			</trans-unit>
 			<trans-unit id="tx_openinghours_domain_model_schedule.monday" resname="tx_openinghours_domain_model_schedule.monday">
-				<source>Monday</source>
+				<target>Montag</target>
 			</trans-unit>
 			<trans-unit id="tx_openinghours_domain_model_schedule.tuesday" resname="tx_openinghours_domain_model_schedule.tuesday">
-				<source>Tuesday</source>
+				<target>Dienstag</target>
 			</trans-unit>
 			<trans-unit id="tx_openinghours_domain_model_schedule.wednesday" resname="tx_openinghours_domain_model_schedule.wednesday">
-				<source>Wednesday</source>
+				<target>Mittwoch</target>
 			</trans-unit>
 			<trans-unit id="tx_openinghours_domain_model_schedule.thursday" resname="tx_openinghours_domain_model_schedule.thursday">
-				<source>Thursday</source>
+				<target>Donnerstag</target>
 			</trans-unit>
 			<trans-unit id="tx_openinghours_domain_model_schedule.friday" resname="tx_openinghours_domain_model_schedule.friday">
-				<source>Friday</source>
+				<target>Freitag</target>
 			</trans-unit>
 			<trans-unit id="tx_openinghours_domain_model_schedule.saturday" resname="tx_openinghours_domain_model_schedule.saturday">
-				<source>Saturday</source>
+				<target>Samstag</target>
 			</trans-unit>
 			<trans-unit id="tx_openinghours_domain_model_schedule.sunday" resname="tx_openinghours_domain_model_schedule.sunday">
-				<source>Sunday</source>
+				<target>Sonntag</target>
 			</trans-unit>
 			<trans-unit id="tx_openinghours_domain_model_openingtime" resname="tx_openinghours_domain_model_openingtime">
-				<source>Openingtime</source>
+				<target>Openingtime</target>
 			</trans-unit>
 			<trans-unit id="tx_openinghours_domain_model_openingtime.start" resname="tx_openinghours_domain_model_openingtime.start">
-				<source>Start</source>
+				<target>Start</target>
 			</trans-unit>
 			<trans-unit id="tx_openinghours_domain_model_openingtime.end" resname="tx_openinghours_domain_model_openingtime.end">
-				<source>End</source>
+				<target>End</target>
 			</trans-unit>
 
 			<trans-unit id="weekday.monday">
-				<source>Monday</source>
+				<target>Montag</target>
 			</trans-unit>
 			<trans-unit id="weekday.tuesday">
-				<source>Tuesday</source>
+				<target>Dienstag</target>
 			</trans-unit>
 			<trans-unit id="weekday.wednesday">
-				<source>Wednesday</source>
+				<target>Mittwoch</target>
 			</trans-unit>
 			<trans-unit id="weekday.thursday">
-				<source>Thursday</source>
+				<target>Donnerstag</target>
 			</trans-unit>
 			<trans-unit id="weekday.friday">
-				<source>Friday</source>
+				<target>Freitag</target>
 			</trans-unit>
 			<trans-unit id="weekday.saturday">
-				<source>Saturday</source>
+				<target>Samstag</target>
 			</trans-unit>
 			<trans-unit id="weekday.sunday">
-				<source>Sunday</source>
+				<target>Sonntag</target>
+			</trans-unit>
+			<trans-unit id="closed">
+				<target>geschlossen</target>
 			</trans-unit>
 
 			<trans-unit id="weekday.abbr.monday">
-				<source>Mon</source>
+				<target>Mo</target>
 			</trans-unit>
 			<trans-unit id="weekday.abbr.tuesday">
-				<source>Tue</source>
+				<target>Di</target>
 			</trans-unit>
 			<trans-unit id="weekday.abbr.wednesday">
-				<source>Wed</source>
+				<target>Mi</target>
 			</trans-unit>
 			<trans-unit id="weekday.abbr.thursday">
-				<source>Thu</source>
+				<target>Do</target>
 			</trans-unit>
 			<trans-unit id="weekday.abbr.friday">
-				<source>Fri</source>
+				<target>Fr</target>
 			</trans-unit>
 			<trans-unit id="weekday.abbr.saturday">
-				<source>Sat</source>
+				<target>Sa</target>
 			</trans-unit>
 			<trans-unit id="weekday.abbr.sunday">
-				<source>Sun</source>
-			</trans-unit>
-
-			<trans-unit id="closed">
-				<source>closed</source>
+				<target>So</target>
 			</trans-unit>
 		</body>
 	</file>

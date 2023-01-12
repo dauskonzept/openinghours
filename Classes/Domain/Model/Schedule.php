@@ -90,6 +90,13 @@ class Schedule extends AbstractEntity
      */
     protected ObjectStorage $exceptions;
 
+    /**
+     * @var \TYPO3\CMS\Extbase\Persistence\ObjectStorage<Override>
+     *
+     * @ORM\Cascade("remove")
+     */
+    protected ObjectStorage $overrides;
+
     public function __construct()
     {
         $this->monday = new ObjectStorage();
@@ -369,14 +376,14 @@ class Schedule extends AbstractEntity
 
     public function addExceptions(Exception $exception): self
     {
-        $this->sunday->attach($exception);
+        $this->exceptions->attach($exception);
 
         return $this;
     }
 
     public function removeException(Exception $exception): self
     {
-        $this->sunday->detach($exception);
+        $this->exceptions->detach($exception);
 
         return $this;
     }
@@ -392,6 +399,35 @@ class Schedule extends AbstractEntity
     public function setExceptions(ObjectStorage $exceptions): self
     {
         $this->exceptions = $exceptions;
+
+        return $this;
+    }
+
+    public function addOverride(Override $override): self
+    {
+        $this->overrides->attach($override);
+
+        return $this;
+    }
+
+    public function removeOverride(Override $override): self
+    {
+        $this->overrides->detach($override);
+
+        return $this;
+    }
+
+    /**
+     * @return \TYPO3\CMS\Extbase\Persistence\ObjectStorage<Override>
+     */
+    public function getOverrides(): ObjectStorage
+    {
+        return $this->overrides;
+    }
+
+    public function setOverrides(ObjectStorage $overrides): self
+    {
+        $this->overrides = $overrides;
 
         return $this;
     }

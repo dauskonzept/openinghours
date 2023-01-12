@@ -9,20 +9,20 @@
     >
         <tr>
             <td>
-                <f:for each="{days.days}" as="day">
+                <f:for each="{days.days}" as="weekday" iteration="i">
                     <f:variable name="opening_hours" value="{days.opening_hours}"/>
-                    {day},
+                    <f:translate key="weekday.abbr.{weekday}" /> {f:if(condition: '{i.isLast}',then:'',else:'&')}
                 </f:for>
             </td>
             <td>
                 <f:if condition="{opening_hours}">
                     <f:then>
-                        <f:for each="{opening_hours}" as="openingTimes">
-                            {openingTimes}
+                        <f:for each="{opening_hours}" as="openingTimes" iteration="i">
+                            {openingTimes} Uhr {f:if(condition: '{i.isLast}',then:'',else:'<br>')}
                         </f:for>
                     </f:then>
                     <f:else>
-                        closed
+                        <f:translate key="closed" />
                     </f:else>
                 </f:if>
             </td>
