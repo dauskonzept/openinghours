@@ -21,6 +21,7 @@ all of the business logic/handling of opening hours.
   certain dates)
 * Display your regular schedule or schedules for contrete weeks with variing
   opening times
+* Show overrides - e.g. for business holidays
 * Fully customize the output to your desire by overwriting Fluid templates
 * Leverages [spatie/opening-hours](https://github.com/spatie/opening-hours)
 

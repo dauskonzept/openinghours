@@ -80,17 +80,6 @@
 		],
 		"fix:php:cs-fixer": [
 			"php-cs-fixer fix -v --using-cache no"
-		],
-		"prepare-release": [
-			"rm .gitignore",
-			"rm -rf .Build",
-			"rm -rf .github",
-			"rm -rf Tests",
-			"rm -rf Resources",
-			"rm .editorconfig",
-			"rm .gitattributes",
-			"rm .php-cs-fixer.php",
-			"rm CONTRIBUTING.rst"
 		]
 	},
 	"extra": {
