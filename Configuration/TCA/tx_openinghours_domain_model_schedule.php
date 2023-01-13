@@ -21,7 +21,7 @@ return [
         'iconfile' => 'EXT:openinghours/Resources/Public/Icons/tx_openinghours_domain_model_schedule.gif',
     ],
     'types' => [
-        '1' => ['showitem' => 'title, startdate, enddate, --div--;Opening hours, monday, tuesday, wednesday, thursday, friday, saturday, sunday, --div--;Exceptions, exceptions, --div--;Overrides, overrides, --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:language, sys_language_uid, l10n_parent, l10n_diffsource, --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:access, hidden, starttime, endtime'],
+        '1' => ['showitem' => 'title, monday, tuesday, wednesday, thursday, friday, saturday, sunday, --div--;LLL:EXT:openinghours/Resources/Private/Language/locallang_db.xlf:tx_openinghours_domain_model_schedule.exceptions, exceptions, --div--;LLL:EXT:openinghours/Resources/Private/Language/locallang_db.xlf:tx_openinghours_domain_model_schedule.overrides, overrides, --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:language, sys_language_uid, l10n_parent, l10n_diffsource, --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:access, hidden, starttime, endtime'],
     ],
     'columns' => [
         'sys_language_uid' => [
