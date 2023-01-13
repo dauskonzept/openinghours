@@ -52,6 +52,16 @@
 				<source>Text</source>
 			</trans-unit>
 
+			<trans-unit id="tx_openinghours_domain_model_exception.date" resname="tx_openinghours_domain_model_exception.date">
+				<source>Date</source>
+			</trans-unit>
+			<trans-unit id="tx_openinghours_domain_model_exception.data" resname="tx_openinghours_domain_model_exception.data">
+				<source>Additional Text</source>
+			</trans-unit>
+			<trans-unit id="tx_openinghours_domain_model_exception.recurring" resname="tx_openinghours_domain_model_exception.recurring">
+				<source>Recurring</source>
+			</trans-unit>
+
 			<trans-unit id="tx_openinghours_list.name" resname="tx_openinghours_list.name">
 				<source>List</source>
 			</trans-unit>
@@ -68,7 +78,6 @@
 			<trans-unit id="tt_content.list_type_pi3">
 				<source>Exceptions</source>
 			</trans-unit>
-
 		</body>
 	</file>
 </xliff>

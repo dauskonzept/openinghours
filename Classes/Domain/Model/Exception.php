@@ -16,6 +16,8 @@ class Exception extends AbstractEntity
      */
     protected ?\DateTime $date = null;
 
+    protected bool $recurring = false;
+
     protected string $data = '';
 
     /**
@@ -82,6 +84,18 @@ class Exception extends AbstractEntity
     public function setOpeninghours(ObjectStorage $openinghours): self
     {
         $this->openinghours = $openinghours;
+
+        return $this;
+    }
+
+    public function isRecurring(): bool
+    {
+        return $this->recurring;
+    }
+
+    public function setRecurring(bool $recurring): self
+    {
+        $this->recurring = $recurring;
 
         return $this;
     }
