@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace DSKZPT\Openinghours\Domain\Model;
 
+use DateTime;
 use TYPO3\CMS\Extbase\Annotation\ORM as ORM;
 use TYPO3\CMS\Extbase\Annotation\Validate as Validate;
 use TYPO3\CMS\Extbase\DomainObject\AbstractEntity;
@@ -14,7 +15,7 @@ class Exception extends AbstractEntity
     /**
      * @Validate("NotEmpty")
      */
-    protected ?\DateTime $date = null;
+    protected ?DateTime $date = null;
 
     protected bool $recurring = false;
 
@@ -32,12 +33,12 @@ class Exception extends AbstractEntity
         $this->openinghours = new ObjectStorage();
     }
 
-    public function getDate(): ?\DateTime
+    public function getDate(): ?DateTime
     {
         return $this->date;
     }
 
-    public function setDate(?\DateTime $date): self
+    public function setDate(?DateTime $date): self
     {
         $this->date = $date;
 

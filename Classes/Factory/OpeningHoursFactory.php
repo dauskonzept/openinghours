@@ -35,10 +35,10 @@ class OpeningHoursFactory
         $exceptions = [];
 
         foreach ($schedule->getExceptions() as $exception) {
-            $date = $exception->getDate()->format('Y-m-d');
+            $date = $exception->getDate()?->format('Y-m-d');
 
             if ($exception->isRecurring()) {
-                $date = $exception->getDate()->format('m-d');
+                $date = $exception->getDate()?->format('m-d');
             }
 
             $exceptions[$date] = [
@@ -47,7 +47,7 @@ class OpeningHoursFactory
 
             foreach ($exception->getOpeninghours() as $openinghour) {
                 $exceptions[$date][] = [
-                    'hours' => sprintf('%s-%s', $openinghour->getStart()->format('H:i'), $openinghour->getEnd()->format('H:i')),
+                    'hours' => sprintf('%s-%s', $openinghour->getStart()?->format('H:i'), $openinghour->getEnd()?->format('H:i')),
                     'data' => $openinghour->getData(),
                 ];
             }
@@ -56,6 +56,8 @@ class OpeningHoursFactory
         ksort($exceptions);
         $data['exceptions'] = $exceptions;
 
-        return OpeningHours::create($data);
+        /** @phpstan-ignore-next-line */
+        return OpeningHours::create($data)
+            ->setSchedule($schedule);
     }
 }

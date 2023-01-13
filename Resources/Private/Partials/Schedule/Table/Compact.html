@@ -2,8 +2,8 @@
       data-namespace-typo3-fluid="true"
 >
 
-<table class="table">
-    <f:for each="{openinghours.forWeekCombined}"
+<table class="table table-striped">
+    <f:for each="{weekPlan}"
            as="days"
            key="weekday"
     >
@@ -11,7 +11,7 @@
             <td>
                 <f:for each="{days.days}" as="weekday" iteration="i">
                     <f:variable name="opening_hours" value="{days.opening_hours}"/>
-                    <f:translate key="weekday.abbr.{weekday}" /> {f:if(condition: '{i.isLast}',then:'',else:'&')}
+                    <f:translate key="weekday.{weekday}" /> {f:if(condition: '{i.isLast}',then:'',else:'<br>')}
                 </f:for>
             </td>
             <td>

@@ -7,10 +7,10 @@
 <f:section name="content">
     <f:if condition="{settings.tableMode} == 'full'">
         <f:then>
-            <f:render partial="Schedule/TableFull" arguments="{_all}"/>
+            <f:render partial="Schedule/Table/Full" arguments="{_all}"/>
         </f:then>
         <f:else>
-            <f:render partial="Schedule/TableCompact" arguments="{_all}"/>
+            <f:render partial="Schedule/Table/Compact" arguments="{_all}"/>
         </f:else>
     </f:if>
 </f:section>

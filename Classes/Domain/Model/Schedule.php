@@ -9,14 +9,6 @@ use TYPO3\CMS\Extbase\Annotation\Validate as Validate;
 use TYPO3\CMS\Extbase\DomainObject\AbstractEntity;
 use TYPO3\CMS\Extbase\Persistence\ObjectStorage;
 
-/**
- * This file is part of the "Openinghours" Extension for TYPO3 CMS.
- *
- * For the full copyright and license information, please read the
- * LICENSE.txt file that was distributed with this source code.
- *
- * (c) 2023 Sven Petersen <sven_harders@gmx.de>
- */
 class Schedule extends AbstractEntity
 {
     /**
@@ -143,39 +135,28 @@ class Schedule extends AbstractEntity
         return $this;
     }
 
-    /**
-     * Adds a Openingtime
-     *
-     * @param Openingtime $tuesday
-     */
-    public function addTuesday(Openingtime $tuesday)
+    public function addTuesday(Openingtime $tuesday): self
     {
         $this->tuesday->attach($tuesday);
+
+        return $this;
     }
 
-    /**
-     * Removes a Openingtime
-     *
-     * @param Openingtime $tuesdayToRemove The Openingtime to be removed
-     */
-    public function removeTuesday(Openingtime $tuesdayToRemove)
+    public function removeTuesday(Openingtime $tuesdayToRemove): self
     {
         $this->tuesday->detach($tuesdayToRemove);
+
+        return $this;
     }
 
     /**
-     * Returns the tuesday
-     *
      * @return \TYPO3\CMS\Extbase\Persistence\ObjectStorage<Openingtime>
      */
-    public function getTuesday()
+    public function getTuesday(): ObjectStorage
     {
         return $this->tuesday;
     }
 
-    /**
-     * @param \TYPO3\CMS\Extbase\Persistence\ObjectStorage<Openingtime> $tuesday
-     */
     public function setTuesday(ObjectStorage $tuesday): self
     {
         $this->tuesday = $tuesday;
