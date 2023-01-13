@@ -62,11 +62,11 @@
 				<source>Recurring</source>
 			</trans-unit>
 
-			<trans-unit id="tx_openinghours_list.name" resname="tx_openinghours_list.name">
-				<source>List</source>
+			<trans-unit id="tx_openinghours_list.name" resname="tx_openinghours_pi1.name">
+				<source>Opening hours: Table view</source>
 			</trans-unit>
 			<trans-unit id="tx_openinghours_list.description" resname="tx_openinghours_list.description">
-				<source>Listet die aktuellen Öffnungszeiten auf</source>
+				<source>Shows a schedule as a table</source>
 			</trans-unit>
 
 			<trans-unit id="tt_content.list_type_pi1">

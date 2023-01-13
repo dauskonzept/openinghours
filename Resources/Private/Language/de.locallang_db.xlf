@@ -52,11 +52,11 @@
 				<target>Text</target>
 			</trans-unit>
 
-			<trans-unit id="tx_openinghours_list.name" resname="tx_openinghours_list.name">
-				<target>Liste</target>
+			<trans-unit id="tx_openinghours_pi1.name" resname="tx_openinghours_pi1.name">
+				<target>Öffnungszeiten: Wochenansicht</target>
 			</trans-unit>
-			<trans-unit id="tx_openinghours_list.description" resname="tx_openinghours_list.description">
-				<target>Listet die aktuellen Öffnungszeiten auf</target>
+			<trans-unit id="tx_openinghours_pi1.description" resname="tx_openinghours_pi1.description">
+				<target>Stellt Öffnungszeiten einer Woche dar</target>
 			</trans-unit>
 
 			<trans-unit id="tt_content.list_type_pi1">

@@ -45,12 +45,12 @@ defined('TYPO3') || die();
             wizards.newContentElement.wizardItems.plugins {
                 elements {
                     list {
-                        iconIdentifier = openinghours-plugin-list
-                        title = LLL:EXT:openinghours/Resources/Private/Language/locallang_db.xlf:tx_openinghours_list.name
-                        description = LLL:EXT:openinghours/Resources/Private/Language/locallang_db.xlf:tx_openinghours_list.description
+                        iconIdentifier = actions-clock
+                        title = LLL:EXT:openinghours/Resources/Private/Language/locallang_db.xlf:tx_openinghours_pi1.name
+                        description = LLL:EXT:openinghours/Resources/Private/Language/locallang_db.xlf:tx_openinghours_pi1.description
                         tt_content_defValues {
                             CType = list
-                            list_type = openinghours_list
+                            list_type = openinghours_pi1
                         }
                     }
                 }
