@@ -1,91 +1,72 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <xliff version="1.0">
-	<file source-language="en" datatype="plaintext" original="EXT:openinghours/Resources/Private/Language/locallang.xlf" date="2023-01-06T16:20:35Z" product-name="openinghours">
+	<file source-language="en" datatype="plaintext" original="EXT:openinghours/Resources/Private/Language/locallang_db.xlf" date="2023-01-06T16:20:35Z" product-name="openinghours">
 		<header/>
 		<body>
 			<trans-unit id="tx_openinghours_domain_model_schedule" resname="tx_openinghours_domain_model_schedule">
-				<source>Schedule</source>
+				<target>Öffnungszeitenplan</target>
 			</trans-unit>
 			<trans-unit id="tx_openinghours_domain_model_schedule.title" resname="tx_openinghours_domain_model_schedule.title">
-				<source>Title</source>
+				<target>Titel</target>
 			</trans-unit>
 			<trans-unit id="tx_openinghours_domain_model_schedule.monday" resname="tx_openinghours_domain_model_schedule.monday">
-				<source>Monday</source>
+				<target>Montag</target>
 			</trans-unit>
 			<trans-unit id="tx_openinghours_domain_model_schedule.tuesday" resname="tx_openinghours_domain_model_schedule.tuesday">
-				<source>Tuesday</source>
+				<target>Dienstag</target>
 			</trans-unit>
 			<trans-unit id="tx_openinghours_domain_model_schedule.wednesday" resname="tx_openinghours_domain_model_schedule.wednesday">
-				<source>Wednesday</source>
+				<target>Mittwoch</target>
 			</trans-unit>
 			<trans-unit id="tx_openinghours_domain_model_schedule.thursday" resname="tx_openinghours_domain_model_schedule.thursday">
-				<source>Thursday</source>
+				<target>Donnerstag</target>
 			</trans-unit>
 			<trans-unit id="tx_openinghours_domain_model_schedule.friday" resname="tx_openinghours_domain_model_schedule.friday">
-				<source>Friday</source>
+				<target>Freitag</target>
 			</trans-unit>
 			<trans-unit id="tx_openinghours_domain_model_schedule.saturday" resname="tx_openinghours_domain_model_schedule.saturday">
-				<source>Saturday</source>
+				<target>Samstag</target>
 			</trans-unit>
 			<trans-unit id="tx_openinghours_domain_model_schedule.sunday" resname="tx_openinghours_domain_model_schedule.sunday">
-				<source>Sunday</source>
+				<target>Sonntag</target>
+			</trans-unit>
+			<trans-unit id="tx_openinghours_domain_model_schedule.exceptions" resname="tx_openinghours_domain_model_schedule.exceptions">
+				<target>Ausnahmen</target>
+			</trans-unit>
+			<trans-unit id="tx_openinghours_domain_model_schedule.overrides" resname="tx_openinghours_domain_model_schedule.overrides">
+				<target>Überschreibungen</target>
 			</trans-unit>
 			<trans-unit id="tx_openinghours_domain_model_openingtime" resname="tx_openinghours_domain_model_openingtime">
-				<source>Openingtime</source>
+				<target>Öffnungszeit</target>
 			</trans-unit>
 			<trans-unit id="tx_openinghours_domain_model_openingtime.start" resname="tx_openinghours_domain_model_openingtime.start">
-				<source>Start</source>
+				<target>Start</target>
 			</trans-unit>
 			<trans-unit id="tx_openinghours_domain_model_openingtime.end" resname="tx_openinghours_domain_model_openingtime.end">
-				<source>End</source>
+				<target>Ende</target>
+			</trans-unit>
+			<trans-unit id="tx_openinghours_domain_model_openingtime.data" resname="tx_openinghours_domain_model_openingtime.data">
+				<target>Ergänzender Text (optional)</target>
+			</trans-unit>
+			<trans-unit id="tx_openinghours_domain_model_override.text" resname="tx_openinghours_domain_model_override.text">
+				<target>Text</target>
 			</trans-unit>
 
-			<trans-unit id="weekday.monday">
-				<source>Monday</source>
+			<trans-unit id="tx_openinghours_list.name" resname="tx_openinghours_list.name">
+				<target>Liste</target>
 			</trans-unit>
-			<trans-unit id="weekday.tuesday">
-				<source>Tuesday</source>
-			</trans-unit>
-			<trans-unit id="weekday.wednesday">
-				<source>Wednesday</source>
-			</trans-unit>
-			<trans-unit id="weekday.thursday">
-				<source>Thursday</source>
-			</trans-unit>
-			<trans-unit id="weekday.friday">
-				<source>Friday</source>
-			</trans-unit>
-			<trans-unit id="weekday.saturday">
-				<source>Saturday</source>
-			</trans-unit>
-			<trans-unit id="weekday.sunday">
-				<source>Sunday</source>
+			<trans-unit id="tx_openinghours_list.description" resname="tx_openinghours_list.description">
+				<target>Listet die aktuellen Öffnungszeiten auf</target>
 			</trans-unit>
 
-			<trans-unit id="weekday.abbr.monday">
-				<source>Mon</source>
+			<trans-unit id="tt_content.list_type_pi1">
+				<target>Tabellenansicht</target>
 			</trans-unit>
-			<trans-unit id="weekday.abbr.tuesday">
-				<source>Tue</source>
+			<trans-unit id="tt_content.list_type_pi2">
+				<target>Aktueller Öffnungszeitraum als Text</target>
 			</trans-unit>
-			<trans-unit id="weekday.abbr.wednesday">
-				<source>Wed</source>
-			</trans-unit>
-			<trans-unit id="weekday.abbr.thursday">
-				<source>Thu</source>
-			</trans-unit>
-			<trans-unit id="weekday.abbr.friday">
-				<source>Fri</source>
-			</trans-unit>
-			<trans-unit id="weekday.abbr.saturday">
-				<source>Sat</source>
-			</trans-unit>
-			<trans-unit id="weekday.abbr.sunday">
-				<source>Sun</source>
-			</trans-unit>
-
-			<trans-unit id="closed">
-				<source>closed</source>
+			<trans-unit id="tt_content.list_type_pi3">
+				<target>Ausnahmen</target>
 			</trans-unit>
 		</body>
 	</file>

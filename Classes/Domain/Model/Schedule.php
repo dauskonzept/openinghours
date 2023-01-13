@@ -25,16 +25,6 @@ class Schedule extends AbstractEntity
     protected string $title = '';
 
     /**
-     * @Validate("NotEmpty")
-     */
-    protected ?\DateTime $startdate = null;
-
-    /**
-     * @Validate("NotEmpty")
-     */
-    protected ?\DateTime $enddate = null;
-
-    /**
      * @var \TYPO3\CMS\Extbase\Persistence\ObjectStorage<Openingtime>
      *
      * @ORM\Cascade("remove")
@@ -117,30 +107,6 @@ class Schedule extends AbstractEntity
     public function setTitle(string $title): self
     {
         $this->title = $title;
-
-        return $this;
-    }
-
-    public function getStartdate(): ?\DateTime
-    {
-        return $this->startdate;
-    }
-
-    public function setStartdate(\DateTime $startdate): self
-    {
-        $this->startdate = $startdate;
-
-        return $this;
-    }
-
-    public function getEnddate(): ?\DateTime
-    {
-        return $this->enddate;
-    }
-
-    public function setEnddate(\DateTime $enddate): self
-    {
-        $this->enddate = $enddate;
 
         return $this;
     }

@@ -24,7 +24,7 @@ class OpeningHoursProvider implements OpeningHoursProviderInterface
 
     public function getCurrent(): ?OpeningHours
     {
-        $currentSchedule = $this->scheduleRepository->findCurrent();
+        $currentSchedule = $this->scheduleRepository->findAll()->getFirst();
 
         if ($currentSchedule === null) {
             throw new \InvalidArgumentException('Es gibt keinen Olan!!!! @todo');
