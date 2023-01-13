@@ -28,7 +28,7 @@ return [
     'palettes' => [
         'fields' => [
             'label' => 'LLL:EXT:openinghours/Resources/Private/Language/locallang.xlf:palette.fields.title',
-            'showitem' => 'date, data',
+            'showitem' => 'date, recurring, data',
         ],
     ],
     'columns' => [
@@ -112,6 +112,20 @@ return [
                 'size' => 4,
                 'eval' => 'date',
                 'default' => null,
+            ],
+        ],
+        'recurring' => [
+            'exclude' => true,
+            'label' => 'LLL:EXT:openinghours/Resources/Private/Language/locallang_db.xlf:tx_openinghours_domain_model_exception.recurring',
+            'config' => [
+                'type' => 'check',
+                'renderType' => 'checkboxToggle',
+                'items' => [
+                    [
+                        0 => '',
+                        1 => '',
+                    ],
+                ],
             ],
         ],
         'data' => [

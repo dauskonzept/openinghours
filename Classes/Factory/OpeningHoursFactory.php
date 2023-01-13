@@ -37,6 +37,10 @@ class OpeningHoursFactory
         foreach ($schedule->getExceptions() as $exception) {
             $date = $exception->getDate()->format('Y-m-d');
 
+            if ($exception->isRecurring()) {
+                $date = $exception->getDate()->format('m-d');
+            }
+
             $exceptions[$date] = [
                 'data' => $exception->getData(),
             ];
