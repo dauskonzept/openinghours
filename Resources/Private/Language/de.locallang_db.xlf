@@ -60,7 +60,7 @@
 			</trans-unit>
 
 			<trans-unit id="tt_content.list_type_pi1">
-				<target>Tabellenansicht</target>
+				<target>Wochenansicht</target>
 			</trans-unit>
 			<trans-unit id="tt_content.list_type_pi2">
 				<target>Aktueller Öffnungszeitraum als Text</target>

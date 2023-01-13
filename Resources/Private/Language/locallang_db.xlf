@@ -70,7 +70,7 @@
 			</trans-unit>
 
 			<trans-unit id="tt_content.list_type_pi1">
-				<source>Table view</source>
+				<source>Week Plan</source>
 			</trans-unit>
 			<trans-unit id="tt_content.list_type_pi2">
 				<source>Current open range</source>
