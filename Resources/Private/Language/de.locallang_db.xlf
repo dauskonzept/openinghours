@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="EXT:openinghours/Resources/Private/Language/locallang_db.xlf" date="2023-01-06T16:20:35Z" product-name="openinghours">
+		<header/>
+		<body>
+			<trans-unit id="tx_openinghours_domain_model_schedule" resname="tx_openinghours_domain_model_schedule">
+				<target>Öffnungszeitenplan</target>
+			</trans-unit>
+			<trans-unit id="tx_openinghours_domain_model_schedule.title" resname="tx_openinghours_domain_model_schedule.title">
+				<target>Titel</target>
+			</trans-unit>
+			<trans-unit id="tx_openinghours_domain_model_schedule.monday" resname="tx_openinghours_domain_model_schedule.monday">
+				<target>Montag</target>
+			</trans-unit>
+			<trans-unit id="tx_openinghours_domain_model_schedule.tuesday" resname="tx_openinghours_domain_model_schedule.tuesday">
+				<target>Dienstag</target>
+			</trans-unit>
+			<trans-unit id="tx_openinghours_domain_model_schedule.wednesday" resname="tx_openinghours_domain_model_schedule.wednesday">
+				<target>Mittwoch</target>
+			</trans-unit>
+			<trans-unit id="tx_openinghours_domain_model_schedule.thursday" resname="tx_openinghours_domain_model_schedule.thursday">
+				<target>Donnerstag</target>
+			</trans-unit>
+			<trans-unit id="tx_openinghours_domain_model_schedule.friday" resname="tx_openinghours_domain_model_schedule.friday">
+				<target>Freitag</target>
+			</trans-unit>
+			<trans-unit id="tx_openinghours_domain_model_schedule.saturday" resname="tx_openinghours_domain_model_schedule.saturday">
+				<target>Samstag</target>
+			</trans-unit>
+			<trans-unit id="tx_openinghours_domain_model_schedule.sunday" resname="tx_openinghours_domain_model_schedule.sunday">
+				<target>Sonntag</target>
+			</trans-unit>
+			<trans-unit id="tx_openinghours_domain_model_schedule.exceptions" resname="tx_openinghours_domain_model_schedule.exceptions">
+				<target>Ausnahmen</target>
+			</trans-unit>
+			<trans-unit id="tx_openinghours_domain_model_schedule.overrides" resname="tx_openinghours_domain_model_schedule.overrides">
+				<target>Überschreibungen</target>
+			</trans-unit>
+			<trans-unit id="tx_openinghours_domain_model_openingtime" resname="tx_openinghours_domain_model_openingtime">
+				<target>Öffnungszeit</target>
+			</trans-unit>
+			<trans-unit id="tx_openinghours_domain_model_openingtime.start" resname="tx_openinghours_domain_model_openingtime.start">
+				<target>Start</target>
+			</trans-unit>
+			<trans-unit id="tx_openinghours_domain_model_openingtime.end" resname="tx_openinghours_domain_model_openingtime.end">
+				<target>Ende</target>
+			</trans-unit>
+			<trans-unit id="tx_openinghours_domain_model_openingtime.data" resname="tx_openinghours_domain_model_openingtime.data">
+				<target>Ergänzender Text (optional)</target>
+			</trans-unit>
+			<trans-unit id="tx_openinghours_domain_model_override.text" resname="tx_openinghours_domain_model_override.text">
+				<target>Text</target>
+			</trans-unit>
+
+			<trans-unit id="tx_openinghours_list.name" resname="tx_openinghours_list.name">
+				<target>Liste</target>
+			</trans-unit>
+			<trans-unit id="tx_openinghours_list.description" resname="tx_openinghours_list.description">
+				<target>Listet die aktuellen Öffnungszeiten auf</target>
+			</trans-unit>
+
+			<trans-unit id="tt_content.list_type_pi1">
+				<target>Tabellenansicht</target>
+			</trans-unit>
+			<trans-unit id="tt_content.list_type_pi2">
+				<target>Aktueller Öffnungszeitraum als Text</target>
+			</trans-unit>
+			<trans-unit id="tt_content.list_type_pi3">
+				<target>Ausnahmen</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>
