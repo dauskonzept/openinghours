@@ -27,7 +27,7 @@ $GLOBALS['TCA']['tt_content']['types']['list']['subtypes_addlist']['openinghours
     [
         'LLL:EXT:openinghours/Resources/Private/Language/locallang_db.xlf:tt_content.list_type_pi1',
         'openinghours_pi1',
-        'EXT:openinghours/Resources/Public/Icons/Extension.svg',
+        'actions-clock',
         'openinghours',
     ]
 );
@@ -38,7 +38,7 @@ $GLOBALS['TCA']['tt_content']['types']['list']['subtypes_addlist']['openinghours
     [
         'LLL:EXT:openinghours/Resources/Private/Language/locallang_db.xlf:tt_content.list_type_pi2',
         'openinghours_pi2',
-        'EXT:openinghours/Resources/Public/Icons/Extension.svg',
+        'actions-clock',
         'openinghours',
     ]
 );
@@ -49,7 +49,7 @@ $GLOBALS['TCA']['tt_content']['types']['list']['subtypes_addlist']['openinghours
     [
         'LLL:EXT:openinghours/Resources/Private/Language/locallang_db.xlf:tt_content.list_type_pi3',
         'openinghours_pi3',
-        'EXT:openinghours/Resources/Public/Icons/Extension.svg',
+        'actions-clock',
         'openinghours',
     ]
 );
