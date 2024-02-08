@@ -6,22 +6,20 @@ namespace DSKZPT\Openinghours\Controller;
 
 use DSKZPT\Openinghours\Exception\NoScheduleFoundException;
 use DSKZPT\Openinghours\Provider\OpeningHoursProviderInterface;
+use Psr\Http\Message\ResponseInterface;
 use TYPO3\CMS\Extbase\Mvc\Controller\ActionController;
 
 class ScheduleController extends ActionController
 {
-    private OpeningHoursProviderInterface $openingHoursProvider;
-
     public function __construct(
-        OpeningHoursProviderInterface $openingHoursProvider
+        private OpeningHoursProviderInterface $openingHoursProvider,
     ) {
-        $this->openingHoursProvider = $openingHoursProvider;
     }
 
     /**
      * @throws NoScheduleFoundException
      */
-    public function tableAction(): void
+    public function tableAction(): ResponseInterface
     {
         $openingHours = $this->openingHoursProvider->getCurrent();
 
@@ -38,12 +36,14 @@ class ScheduleController extends ActionController
             'weekPlan' => $weekPlan,
             'openinghours' => $openingHours,
         ]);
+
+        return $this->htmlResponse();
     }
 
     /**
      * @throws NoScheduleFoundException
      */
-    public function exceptionsAction(): void
+    public function exceptionsAction(): ResponseInterface
     {
         $dateString = $this->settings['dateString'];
         $referenceDate = new \DateTime($dateString);
@@ -60,12 +60,14 @@ class ScheduleController extends ActionController
             'openingHours' => $openingHours,
             'exceptions' => $exceptions,
         ]);
+
+        return $this->htmlResponse();
     }
 
     /**
      * @throws NoScheduleFoundException
      */
-    public function currentOpenRangeAction(): void
+    public function currentOpenRangeAction(): ResponseInterface
     {
         $openingHours = $this->openingHoursProvider->getCurrent();
 
@@ -86,5 +88,7 @@ class ScheduleController extends ActionController
                 'rangeEnd' => $range->end(),
             ]);
         }
+
+        return $this->htmlResponse();
     }
 }
