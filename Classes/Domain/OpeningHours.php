@@ -140,7 +140,7 @@ class OpeningHours extends BaseOpeningHours
     }
 
     /**
-     * @return false|TimeRange
+     * @return TimeRange|null
      */
     public function getCurrentOpenRange()
     {
