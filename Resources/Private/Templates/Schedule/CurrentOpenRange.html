@@ -12,7 +12,7 @@
         <f:else>
             <f:if condition="{range}">
                 <f:then>
-                    We're open since {rangeStart} o'clock. We'll will close at {rangeEnd} o'clock.
+                    We're open since {rangeStart} o'clock. We will close at {rangeEnd} o'clock.
                 </f:then>
                 <f:else>
                     We're closed since {openingHours.previousClose -> f:format.date(format: 'l H:i')} o'clock,
