@@ -59,6 +59,7 @@
                                 <type>input</type>
                                 <size>20</size>
                                 <eval>trim</eval>
+                                <default>this monday</default>
                             </config>
                         </TCEforms>
                     </settings.dateString>
